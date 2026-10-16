@@ -263,3 +263,24 @@ body.dark-theme .nav-menu a,
 body.dark-theme .nav-menu .nav-link {
   color: #ffffff !important;
 }
+
+/* ==========================================
+   CORREÇÃO DOS BOTÕES NOS CARDS (TEMA ESCURO)
+   ========================================== */
+
+/* Força os botões dos cards a terem fundo azul com texto branco */
+body.dark-theme .btn-card,
+body.dark-theme .btn-submit,
+body.dark-theme .btn-download-sm {
+  background-color: #32bcad !important; /* Turquesa de alto contraste */
+  color: #0f172a !important;            /* Texto escuro legível sobre o turquesa */
+  font-weight: 700 !important;
+}
+
+/* Efeito ao passar o cursor ou tocar no botão */
+body.dark-theme .btn-card:hover,
+body.dark-theme .btn-submit:hover,
+body.dark-theme .btn-download-sm:hover {
+  background-color: #38bdf8 !important;
+  color: #0f172a !important;
+}
