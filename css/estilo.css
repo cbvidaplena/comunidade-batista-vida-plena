@@ -1413,9 +1413,22 @@ body.dark-mode .menu-toggle i {
 /* Estilo para a citação/hino recuado */
 .trecho-hino {
   font-style: italic;         /* Deixa em itálico */
-  margin-left: 25% !important; /* Cria o recuo/espaço à esquerda */
-  text-align: left;           /* Mantém as linhas alinhadas à esquerda dentro do bloco */
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-left: 2rem;
+   margin-top: 1rem;
+  margin-bottom: 1rem;
+   padding-left: 1rem;
   line-height: 1.6;           /* Espaçamento agradável entre linhas */
 }
+/* Limita o tamanho da foto do autor */
+.autor-foto {
+  width: 80px;                  /* Largura fixa da foto */
+  height: 80px;                 /* Altura fixa da foto */
+  border-radius: 50%;           /* Deixa a foto redonda */
+  object-fit: cover;            /* Não distorce a imagem */
+}
+/* Espaçamento entre os parágrafos da reflexão */
+#reflexao-texto p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
