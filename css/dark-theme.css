@@ -60,6 +60,27 @@ body.dark-theme textarea {
   color: #f8fafc !important;
   border-color: #334155 !important;
 }
+/* ==========================================
+   CORREÇÃO DO MENU LATERAL NO TEMA ESCURO
+   ========================================== */
+
+/* Força os links da gaveta de navegação a ficarem brancos */
+body.dark-theme .nav-menu a,
+body.dark-theme .nav-link {
+  color: #ffffff !important;
+}
+
+/* Cor do link ativo e hover no menu */
+body.dark-theme .nav-menu a.active,
+body.dark-theme .nav-link.active {
+  color: #ffffff !important;
+  border-bottom-color: #32bcad !important;
+}
+
+body.dark-theme .nav-menu a:hover,
+body.dark-theme .nav-link:hover {
+  color: #32bcad !important;
+}
 
 /* ==========================================
    HERO / BANNER DE ENTRADA
@@ -199,43 +220,46 @@ body.dark-theme .link-lideranca {
   color: #32bcad !important;
 }
 /* ==========================================
-   QUADRO DE AVISOS E TEMAS DA EBD (TEMA ESCURO)
+   QUADRO DE AVISOS E TEMAS DA EBD (ISOLADO)
    ========================================== */
 
-/* 1. Card Principal de Avisos */
+/* Card Principal e Mini-cards do Quadro */
 body.dark-theme .card-avisos {
   background-color: #1e293b !important;
   border-color: #334155 !important;
   border-top-color: #32bcad !important;
 }
 
-/* 2. Subtítulo e texto descritivo do quadro */
-body.dark-theme .avisos-sub {
+body.dark-theme .card-avisos .avisos-sub {
   color: #cbd5e1 !important;
 }
 
-/* 3. Badge do Mês */
-body.dark-theme .mes-badge {
+body.dark-theme .card-avisos .mes-badge {
   background-color: #0f172a !important;
   color: #38bdf8 !important;
 }
 
-/* 4. Mini-cards internos de cada classe (Adultos, Jovens, Kids) */
-body.dark-theme .item-tema {
+body.dark-theme .card-avisos .item-tema {
   background-color: #0f172a !important;
   border-color: #334155 !important;
 }
 
-/* 5. Título do tema da aula e descrição */
-body.dark-theme .item-tema h3 {
+body.dark-theme .card-avisos .item-tema h3 {
   color: #f8fafc !important;
 }
 
-body.dark-theme .item-tema p {
+body.dark-theme .card-avisos .item-tema p {
   color: #cbd5e1 !important;
 }
 
-/* 6. Nome do professor */
-body.dark-theme .professor-info {
+body.dark-theme .card-avisos .professor-info {
   color: #32bcad !important;
+}
+
+/* ==========================================
+   PROTEÇÃO DEFINITIVA DO MENU MOBILE
+   ========================================== */
+body.dark-theme .nav-menu a,
+body.dark-theme .nav-menu .nav-link {
+  color: #ffffff !important;
 }
