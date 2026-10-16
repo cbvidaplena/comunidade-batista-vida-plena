@@ -1432,3 +1432,88 @@ body.dark-mode .menu-toggle i {
   line-height: 1.6;
 }
 
+/* --- Quadro de Avisos / Temas da EBD --- */
+.ebd-avisos-section {
+  margin-bottom: 2.5rem;
+}
+
+.card-avisos {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-top: 4px solid #003366; /* Linha de destaque superior azul */
+  border-radius: 12px;
+  padding: 1.8rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.avisos-header {
+  margin-bottom: 1.5rem;
+}
+
+.mes-badge {
+  display: inline-block;
+  background-color: #e0f2fe;
+  color: #0369a1;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+
+.avisos-sub {
+  color: #64748b;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Grid com as 3 classes lado a lado */
+.grid-temas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.item-tema {
+  background: #f8fafc;
+  border: 1px solid #f1f5f9;
+  border-radius: 8px;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-tema h3 {
+  font-size: 1.1rem;
+  color: #0f172a;
+  margin: 8px 0;
+}
+
+.item-tema p {
+  font-size: 0.88rem;
+  color: #475569;
+  line-height: 1.4;
+  flex-grow: 1; /* Alinha o rodapé dos cards */
+  margin-bottom: 12px;
+}
+
+.professor-info {
+  font-size: 0.8rem;
+  color: #003366;
+  font-weight: 600;
+}
+
+/* Tags de identificação de cada classe */
+.classe-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  width: fit-content;
+}
+
+.classe-tag.adultos { color: #003366; }
+.classe-tag.jovens { color: #0d9488; }
+.classe-tag.kids { color: #d97706; }
