@@ -1413,7 +1413,7 @@ body.dark-mode .menu-toggle i {
 /* Estilo para a citação/hino recuado */
 .trecho-hino {
   font-style: italic;         /* Deixa em itálico */
-  margin-left: 2rem;
+  margin-left: 3rem;
    margin-top: 1rem;
   margin-bottom: 1rem;
    padding-left: 1rem;
