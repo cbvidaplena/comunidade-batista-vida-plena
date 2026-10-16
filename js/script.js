@@ -141,6 +141,14 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         fotoElem.style.display = 'none'; // Esconde a imagem se não houver foto cadastrada
       }
+      // LINHAS PARA O ÁUDIO:
+const audioSource = document.getElementById('reflexao-audio-source');
+const player = document.getElementById('reflexao-player');
+
+if (audioSource && player) {
+  audioSource.src = reflexaoHoje.audio; // Pega o caminho vindo do arquivo de dados
+  player.load();                        // Carrega o novo áudio no player
+}
     }
   }
 });
