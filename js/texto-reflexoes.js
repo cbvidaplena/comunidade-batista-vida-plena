@@ -3,7 +3,7 @@ window.historicoReflexoes = [
   {
     autor: "Pr. Luiz Zaire",
     data: "Outubro de 2026",
-    foto: "imagem/luiz-zaire.jpg",
+    foto: "imagem/luiz-zaire.jpeg",
     titulo: "Olhando para Cristo",
     verso: '"Olhando firmemente para o Autor e Consumador da fé, Jesus"',
     texto: `<p>O título dessa breve reflexão nos remete para o livro de Hebreus 12.2: <em>"Olhando firmemente para o Autor e Consumador da fé, Jesus"</em>. Inspirado por esse verso, o Hino 579 do Cantor Cristão, com o mesmo título, tem o seguinte estribilho:</p>
