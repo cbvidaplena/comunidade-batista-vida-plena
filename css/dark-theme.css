@@ -1,14 +1,17 @@
 /* ==========================================
-   TEMA ESCURO - BASE
+   TEMA ESCURO - BASE (CORRIGIDO)
    ========================================== */
 
-/* 1. Fundo e texto geral */
+/* 1. Sobrescreve as variáveis do estilo.css e força fundo/texto geral */
 body.dark-theme {
+  --color-bg-light: #0f172a !important;
+  --color-text-dark: #f8fafc !important;
+  --color-white: #1e293b !important;
   background-color: #0f172a !important;
   color: #f8fafc !important;
 }
 
-/* 2. Cartões Padrão (Fundo grafite e borda azul/verde no topo) */
+/* 2. Cartões Padrão (Fundo grafite e borda turquesa no topo) */
 body.dark-theme .card,
 body.dark-theme .area-card,
 body.dark-theme .contact-card,
@@ -19,7 +22,9 @@ body.dark-theme .leader-card,
 body.dark-theme .pastor-card,
 body.dark-theme .video-card,
 body.dark-theme .family-card,
-body.dark-theme .card-reflexão {
+body.dark-theme .card-reflexao,
+body.dark-theme .card-avisos,
+body.dark-theme .item-tema {
   background-color: #1e293b !important;
   border-color: #334155 !important;
   border-top-color: #32bcad !important;
@@ -92,8 +97,6 @@ body.dark-theme .download-info p { color: #cbd5e1 !important; }
 /* ==========================================
    MISSÕES (APENAS A CAIXA DO CENTAVO ,07)
    ========================================== */
-
-/* Mire especificamente na classe da caixa de aviso da OMF */
 body.dark-theme .omf-notice,
 body.dark-theme .identificador-box,
 body.dark-theme .alert-info {
@@ -113,7 +116,6 @@ body.dark-theme .identificador-box strong {
   color: #ffffff !important;
 }
 
-/* DE: #f0fdf4 PARA: #0f172a no Dark Mode */
 body.dark-theme .omf-box {
   background-color: #0f172a !important;
   border-color: #334155 !important;
@@ -151,66 +153,48 @@ body.dark-theme .badge-tag {
   background-color: #0f172a !important;
   color: #38bdf8 !important;
 }
-/* ==========================================================================
-   AJUSTE DA GALERIA DE FAMÍLIAS PARA O TEMA ESCURO
-   ========================================================================== */
 
-/* Altera o fundo do card para um tom escuro/azulado e ajusta as bordas */
-body.dark-theme .family-card,
-body.dark-mode .family-card {
-  background-color: #1e293b !important; /* Tom escuro para harmonizar com a página */
-  border-top-color: var(--color-accent-blue, #32bcad); /* Destaque da borda */
+/* ==========================================================================
+   GALERIA DE FAMÍLIAS & REFLEXÃO
+   ========================================================================== */
+body.dark-theme .family-card {
+  background-color: #1e293b !important;
+  border-top-color: #32bcad !important;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
-/* Ajusta a cor do container da foto quando estiver sem imagem */
-body.dark-theme .family-photo-container,
-body.dark-mode .family-photo-container {
-  background-color: #0f172a;
+body.dark-theme .family-photo-container {
+  background-color: #0f172a !important;
 }
 
-/* Garante o contraste correto dos textos no modo escuro */
-body.dark-theme .family-info h3,
-body.dark-mode .family-info h3 {
-  color: #ffffff !important; /* Título bem visível em branco */
-}
-
-body.dark-theme .family-info p,
-body.dark-mode .family-info p {
-  color: #94a3b8 !important; /* Subtítulo em cinza claro */
-}
-
-/* AJUSTA O TOM DO CARD DE REFLEXÃO PARA IGUALAR AOS DEMAIS CARDS */
-body.dark-theme .card-reflexao,
-body.dark-mode .card-reflexao,
-body.dark-theme .reflexao-card,
-body.dark-mode .reflexao-card {
-  background-color: #1e293b !important; /* Mesmo tom azul/grafite dos outros cards */
-  border-top: 3px solid #32bcad !important; /* Borda turquesa igual aos outros */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
-}
-
-/* Garante o contraste dos textos e links internos */
-body.dark-theme .card-reflexao h3,
-body.dark-theme .card-reflexao h4,
-body.dark-mode .card-reflexao h3,
-body.dark-mode .card-reflexao h4 {
+body.dark-theme .family-info h3 {
   color: #ffffff !important;
 }
 
-body.dark-theme #reflexao-texto,
-body.dark-mode #reflexao-texto {
+body.dark-theme .family-info p {
+  color: #94a3b8 !important;
+}
+
+body.dark-theme .card-reflexao {
+  background-color: #1e293b !important;
+  border-top: 3px solid #32bcad !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+body.dark-theme .card-reflexao h3,
+body.dark-theme .card-reflexao h4 {
+  color: #ffffff !important;
+}
+
+body.dark-theme #reflexao-texto {
   color: #cbd5e1 !important;
 }
 
-body.dark-theme #reflexao-verso,
-body.dark-mode #reflexao-verso {
+body.dark-theme #reflexao-verso {
   color: #94a3b8 !important;
   border-left-color: #32bcad !important;
 }
 
-/* Cor do link "Conheça nossa liderança" no modo escuro */
-body.dark-theme .link-lideranca,
-body.dark-mode .link-lideranca {
+body.dark-theme .link-lideranca {
   color: #32bcad !important;
 }
