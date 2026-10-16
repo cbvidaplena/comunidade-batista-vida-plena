@@ -129,7 +129,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (dataElem) dataElem.textContent = atual.data || '';
     if (tituloElem) tituloElem.textContent = atual.titulo || '';
     if (versoElem) versoElem.textContent = atual.verso || '';
-    if (textoElem) textoElem.textContent = atual.texto || '';
+    
+    // ALTERAÇÃO AQUI: Mudado para innerHTML
+    if (textoElem) textoElem.innerHTML = atual.texto || '';
 
     if (fotoElem) {
       if (atual.foto) {
