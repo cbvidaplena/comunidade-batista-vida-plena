@@ -144,10 +144,9 @@ document.addEventListener('DOMContentLoaded', () => {
       // LINHAS PARA O ÁUDIO:
 const player = document.getElementById('reflexao-player');
 
-if (player && reflexaoHoje.audio) {
-  player.src = reflexaoHoje.audio; // Define o caminho diretamente no elemento <audio>
-  player.load();                   // Força o carregamento do ficheiro
+if (player && atual.audio) {
+  player.src = atual.audio; // Usa atual.audio em vez de reflexaoHoje.audio
+  player.load();
 }
-    }
   }
 });
