@@ -130,23 +130,25 @@ document.addEventListener('DOMContentLoaded', () => {
     if (tituloElem) tituloElem.textContent = atual.titulo || '';
     if (versoElem) versoElem.textContent = atual.verso || '';
     
-    // ALTERAÇÃO AQUI: Mudado para innerHTML
+    // Mudado para innerHTML para aceitar tags HTML no texto
     if (textoElem) textoElem.innerHTML = atual.texto || '';
 
+    // Lógica da Foto
     if (fotoElem) {
       if (atual.foto) {
         fotoElem.src = atual.foto;
         fotoElem.alt = `Foto de ${atual.autor}`;
         fotoElem.style.display = 'block';
       } else {
-        fotoElem.style.display = 'none'; // Esconde a imagem se não houver foto cadastrada
+        fotoElem.style.display = 'none';
       }
-      // LINHAS PARA O ÁUDIO:
-const player = document.getElementById('reflexao-player');
+    } // <-- AQUI FALTAVA FECHAR A CHAVE DA FOTO
 
-if (player && atual.audio) {
-  player.src = atual.audio; // Usa atual.audio em vez de reflexaoHoje.audio
-  player.load();
-}
+    // Lógica do Áudio
+    const player = document.getElementById('reflexao-player');
+    if (player && atual.audio) {
+      player.src = atual.audio;
+      player.load();
+    }
   }
 });
