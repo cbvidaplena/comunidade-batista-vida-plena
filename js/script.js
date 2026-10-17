@@ -111,7 +111,8 @@ function copiarPix() {
     console.error("Erro ao copiar chave PIX: ", err);
   });
 }
-// 4. Seção Reflexões mensal
+
+// 4. SEÇÃO REFLEXÃO MENSAL (Página index.html)
 document.addEventListener('DOMContentLoaded', () => {
   const dados = window.historicoReflexoes;
 
@@ -130,10 +131,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (tituloElem) tituloElem.textContent = atual.titulo || '';
     if (versoElem) versoElem.textContent = atual.verso || '';
     
-    // Mudado para innerHTML para aceitar tags HTML no texto
     if (textoElem) textoElem.innerHTML = atual.texto || '';
 
-    // Lógica da Foto
     if (fotoElem) {
       if (atual.foto) {
         fotoElem.src = atual.foto;
@@ -142,15 +141,17 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         fotoElem.style.display = 'none';
       }
-    } // <-- AQUI FALTAVA FECHAR A CHAVE DA FOTO
+    }
 
-    // Lógica do Áudio
     const player = document.getElementById('reflexao-player');
     if (player && atual.audio) {
       player.src = atual.audio;
       player.load();
     }
-  // 5. RENDERIZAR HISTÓRICO COMPLETO DE REFLEXÕES (Página historico-reflexoes.html)
+  }
+}); // <-- AQUI ESTAVA A FALTAR FECHAR A SEÇÃO 4
+
+// 5. RENDERIZAR HISTÓRICO COMPLETO DE REFLEXÕES (Página historico-reflexoes.html)
 document.addEventListener('DOMContentLoaded', () => {
   const containerHistorico = document.getElementById('lista-historico-reflexoes');
   const dados = window.historicoReflexoes;
@@ -163,12 +164,10 @@ document.addEventListener('DOMContentLoaded', () => {
       card.className = 'card-reflexao';
       card.style.marginBottom = '2rem';
 
-      // Monta a estrutura da foto e dados do autor
       const fotoHtml = reflexao.foto 
         ? `<img src="${reflexao.foto}" alt="Foto de ${reflexao.autor || ''}" class="autor-foto">`
         : `<img src="imagem/logo-cinza.png" alt="Logo" class="autor-foto">`;
 
-      // Monta a estrutura do áudio se existir
       const audioHtml = reflexao.audio ? `
         <div class="reflexao-audio-container" style="margin: 1.2rem 0; padding: 0.8rem; background-color: rgba(50, 188, 173, 0.08); border-radius: 8px;">
           <p style="font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem; display: flex; align-items: center; gap: 0.5rem; color: var(--color-primary);">
