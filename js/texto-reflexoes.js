@@ -3,7 +3,7 @@ window.historicoReflexoes = [
   {
     autor: "Pr. Luiz Zaire",
     data: "Outubro de 2026",
-    foto: "imagem/luiz-zaire.jpeg",
+    foto: "imagem/luiz-zaire.webp",
     titulo: "Olhando para Cristo",
     audio: "audio/olhandoparacristo.mp3",
     verso: '"Olhando firmemente para o Autor e Consumador da fé, Jesus"',
