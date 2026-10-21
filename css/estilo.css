@@ -581,16 +581,18 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 1.2rem;
 }
 
-/* CORREÇÃO DO TEXTO ESTICADO E LARGURA */
+/* CORREÇÃO DO ALINHAMENTO NO DESKTOP E MOBILE */
 .leader-card p,
 .history-card p,
 .card-sobre p {
   color: #334155;
   font-size: 1rem;
   line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
+  width: 100%;             /* Permite ocupar toda a largura do container */
+  margin: 0 0 1.2rem 0;     /* Mantém apenas a margem inferior (1.2rem) */
   text-align: justify;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
   hyphens: auto;
   word-break: normal;
 }
