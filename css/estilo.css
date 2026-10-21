@@ -495,23 +495,26 @@ h1, h2, h3, h4, h5, h6,
   width: 22px;
   border-radius: 10px;
 }
+
 /* ==========================================================================
    PÁGINA SOBRE NÓS
    ========================================================================== */
 
 /* Bloco da Missão Central */
 .mission-banner {
- background: linear-gradient(135deg, #0b1f3a 0%, #1e3a8a 100%) !important;
+  background: linear-gradient(135deg, #0b1f3a 0%, #1e3a8a 100%) !important;
   color: #ffffff !important;
-  padding: 2.5rem 2rem;
+  padding: 2rem 1.25rem; /* Reduzido o padding no mobile para ganhar espaço */
   border-radius: 12px;
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
+  width: 100%;
+  box-sizing: border-border-box;
 }
 
 .mission-quote {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 600;
   font-style: italic;
   margin-bottom: 0.5rem;
@@ -543,11 +546,12 @@ h1, h2, h3, h4, h5, h6,
 .leader-card {
   background: #ffffff;
   border-radius: var(--radius-md, 12px);
-  padding: 2.5rem 2rem;
+  padding: 2rem 1.25rem; /* Padding interno menor no mobile */
   text-align: center;
-  width: 100%; /* Ocupa 100% da largura do container, alinhando com as pontas dos pilares */
+  width: 100%;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   border-top: 4px solid #132e54;
+  box-sizing: border-box;
 }
 
 .leader-avatar {
@@ -577,19 +581,24 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 1.2rem;
 }
 
-.leader-card p {
+/* CORREÇÃO DO TEXTO ESTICADO E LARGURA */
+.leader-card p,
+.history-card p,
+.card-sobre p {
   color: #334155;
   font-size: 1rem;
   line-height: 1.6;
-  max-width: 800px; /* Mantém o texto agradável de ler ao centro */
+  max-width: 800px;
   margin: 0 auto;
+  text-align: left; /* Garante alinhamento à esquerda sem abrir espaços no texto */
+  word-break: normal;
 }
 
 /* Bloco para "Nossa História" (Card Largo de 100%) */
 .history-card {
   background: #ffffff;
   border-radius: var(--radius-md, 12px);
-  padding: 2.5rem 2rem;
+  padding: 2rem 1.25rem;
   width: 100%;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   border-top: 5px solid #132e54;
@@ -597,8 +606,8 @@ h1, h2, h3, h4, h5, h6,
   color: #334155;
   line-height: 1.7;
   font-size: 1rem;
+  box-sizing: border-box;
 }
-
 /* ==========================================================================
    PÁGINA DE PROGRAMAÇÃO & TABELAS RESPONSIVAS
    ========================================================================== */
