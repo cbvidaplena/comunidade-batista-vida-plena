@@ -2,20 +2,23 @@
 <html lang="pt-BR">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W4WCCYMB54"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W4WCCYMB54"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-W4WCCYMB54');
-</script>
+    gtag('config', 'G-W4WCCYMB54');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sobre Nós - Comunidade Batista Vida Plena</title>
+  
+  <!-- ORDEM CORRIGIDA DO CSS: ESTILO PRIMEIRO, MOBILE DEPOIS -->
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/mobile.css">
   <link rel="stylesheet" href="css/dark-theme.css">
-   <link rel="stylesheet" href="css/mobile.css">
-   <link rel="stylesheet" href="css/estilo.css">
+  
   <!-- Ícones do Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -29,10 +32,10 @@
       </a>
 
       <div class="hamburger" id="menu-toggle">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
       <ul class="nav-menu" id="nav-menu">
         <li><a href="index.html" class="nav-link">Início</a></li>
@@ -52,63 +55,63 @@
         <a href="https://www.youtube.com/@CBVidaPlena" target="_blank" rel="noopener noreferrer" class="social-icon" title="YouTube">
           <i class="fa-brands fa-youtube"></i>
         </a>
-        <!-- Divisória visual (barrinha vertical) -->
         <span class="divider"></span>
-        <!-- Botão de Alternar Tema (No final) -->
         <button id="theme-toggle" class="btn-theme" aria-label="Alternar Tema">
-        <i id="theme-icon" class="fa-solid fa-moon"></i>
+          <i id="theme-icon" class="fa-solid fa-moon"></i>
         </button>
       </div>
     </nav>
   </header>
   
   <!-- CONTEÚDO PRINCIPAL -->
-<main class="container" style="margin-top: 2.5rem;">
+  <main class="container" style="margin-top: 2.5rem;">
 
- <!-- CARTÃO DE DESTAQUE COM GRADIENTE E BORDA RESTAURADOS -->
-  <div class="mission-banner">
-    <h1 class="mission-quote">"Conhecer Jesus e fazê-lo conhecido"</h1>
-    <p>Visão & Missão</p>
-  </div>
-  
-  <!-- CARTÃO COM O TEXTO COMPLETO DA DECLARAÇÃO -->
-  <div class="history-card" style="border-left-color: #32bcad; background-color: #ffffff;">
-    <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
-      <i class="fa-solid fa-compass" style="font-size: 1.8rem; font-style: italic; color: #32bcad;"></i>
-      <h2 style="color: var(--color-primary); font-size: 1.4rem; margin: 0;">Nossa Filosofia Ministerial</h2>
+    <!-- CARTÃO DE DESTAQUE -->
+    <div class="mission-banner">
+      <h1 class="mission-quote">"Conhecer Jesus e fazê-lo conhecido"</h1>
+      <p class="mission-subtitle">Visão & Missão</p>
     </div>
+    
+    <!-- CARTÃO COM A DECLARAÇÃO MINISTERIAL -->
+    <div class="history-card" style="border-top-color: #32bcad;">
+      <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
+        <i class="fa-solid fa-compass" style="font-size: 1.8rem; color: #32bcad;"></i>
+        <h2 style="color: var(--color-primary); font-size: 1.4rem; margin: 0;">Nossa Filosofia Ministerial</h2>
+      </div>
 
-    <div style="color: #334155; line-height: 1.7; text-align: justify;">
-      <p style="margin-bottom: 1.2rem;">
-        Sobre nossa visão/missão, cremos que a vida cristã começa e continua em um relacionamento verdadeiro com Jesus Cristo. Por isso, resumimos nossa visão e missão em uma frase: <strong>"Conhecer Jesus e fazê-lo conhecido"</strong>. Conhecer Jesus não significa apenas saber sobre Ele, mas desenvolver um relacionamento pessoal com Ele, reconhecendo-o como Senhor e Salvador, aprendendo a viver de acordo com a sua Palavra e crescendo continuamente na fé.
-      </p>
+      <!-- REMOVIDO O text-align: justify AQUI PARA O TEXTO NÃO ESTICAR -->
+      <div style="color: #334155; line-height: 1.7; text-align: left;">
+        <p style="margin-bottom: 1.2rem;">
+          Sobre nossa visão/missão, cremos que a vida cristã começa e continua em um relacionamento verdadeiro com Jesus Cristo. Por isso, resumimos nossa visão e missão em uma frase: <strong>"Conhecer Jesus e fazê-lo conhecido"</strong>. Conhecer Jesus não significa apenas saber sobre Ele, mas desenvolver um relacionamento pessoal com Ele, reconhecendo-o como Senhor e Salvador, aprendendo a viver de acordo com a sua Palavra e crescendo continuamente na fé.
+        </p>
 
-      <p style="margin-bottom: 1.2rem;">
-        Mas quem conhece verdadeiramente Jesus não guarda essa experiência apenas para si. O encontro com Cristo nos conduz à missão. Somos chamados a anunciar o Evangelho, compartilhar as boas-novas da salvação e ajudar outras pessoas a conhecerem e seguirem Jesus. Por isso, entendemos a missão da igreja à luz da Grande Comissão:
-      </p>
+        <p style="margin-bottom: 1.2rem;">
+          Mas quem conhece verdadeiramente Jesus não guarda essa experiência apenas para si. O encontro com Cristo nos conduz à missão. Somos chamados a anunciar o Evangelho, compartilhar as boas-novas da salvação e ajudar outras pessoas a conhecerem e seguirem Jesus. Por isso, entendemos a missão da igreja à luz da Grande Comissão:
+        </p>
 
-      <!-- CITAÇÃO BÍBLICA EM DESTAQUE -->
-      <blockquote style="background-color: #f8fafc; border-left: 4px solid var(--color-primary); margin: 1.5rem 0; padding: 1rem 1.2rem; font-style: italic; color: #1e293b; border-radius: 0 8px 8px 0;">
-        "Ide, portanto, fazei discípulos de todas as nações, batizando-os em nome do Pai, e do Filho, e do Espírito Santo." — Mateus 28.19
-      </blockquote>
+        <!-- CITAÇÃO BÍBLICA EM DESTAQUE -->
+        <blockquote style="background-color: #f8fafc; border-left: 4px solid var(--color-primary); margin: 1.5rem 0; padding: 1rem 1.2rem; font-style: italic; color: #1e293b; border-radius: 0 8px 8px 0;">
+          "Ide, portanto, fazei discípulos de todas as nações, batizando-os em nome do Pai, e do Filho, e do Espírito Santo." — Mateus 28.19
+        </blockquote>
 
-      <p style="margin-bottom: 1.2rem;">
-        Nossa missão envolve, portanto, um movimento contínuo: <strong>conhecer, viver, compartilhar, discipular e batizar</strong>.
-      </p>
+        <p style="margin-bottom: 1.2rem;">
+          Nossa missão envolve, portanto, um movimento contínuo: <strong>conhecer, viver, compartilhar, discipular e batizar</strong>.
+        </p>
 
-      <p style="margin-bottom: 1.2rem;">
-        Queremos conhecer Jesus por meio das Escrituras, da oração, da comunhão e da vida no Espírito. Queremos viver como seus discípulos, permitindo que o Evangelho transforme nossa maneira de pensar, amar e servir. E queremos fazê-lo conhecido, anunciando Cristo àqueles que ainda não o conhecem</p>
+        <p style="margin-bottom: 1.2rem;">
+          Queremos conhecer Jesus por meio das Escrituras, da oração, da comunhão e da vida no Espírito. Queremos viver como seus discípulos, permitindo que o Evangelho transforme nossa maneira de pensar, amar e servir. E queremos fazê-lo conhecido, anunciando Cristo àqueles que ainda não o conhecem.
+        </p>
 
-      <p style="margin-bottom: 1.5rem;">
-        Quando alguém conhece Jesus, nossa missão não termina. Começa uma nova etapa: discipular essa pessoa, ensiná-la a obedecer à Palavra, integrá-la à comunidade da fé e conduzi-la ao compromisso público com Cristo por meio do batismo. Assim, cada discípulo é chamado a fazer novos discípulos. Não queremos simplesmente uma igreja cheia de pessoas que frequentam cultos. Queremos uma igreja formada por discípulos de Jesus que conhecem a Cristo, vivem para Cristo e levam outros a Cristo.
-      </p>
+        <p style="margin-bottom: 1.5rem;">
+          Quando alguém conhece Jesus, nossa missão não termina. Começa uma nova etapa: discipular essa pessoa, ensiná-la a obedecer à Palavra, integrá-la à comunidade da fé e conduzi-la ao compromisso público com Cristo por meio do batismo. Assim, cada discípulo é chamado a fazer novos discípulos. Não queremos simplesmente uma igreja cheia de pessoas que frequentam cultos. Queremos uma igreja formada por discípulos de Jesus que conhecem a Cristo, vivem para Cristo e levam outros a Cristo.
+        </p>
 
-      <!-- ASSINATURA PASTORAL -->
-      <div style="border-top: 1px solid #e2e8f0; padding-top: 1rem; text-align: right; font-weight: 600; color: var(--color-primary);">
-        — Pr. Márcio Tavares
+        <!-- ASSINATURA PASTORAL -->
+        <div style="border-top: 1px solid #e2e8f0; padding-top: 1rem; text-align: right; font-weight: 600; color: var(--color-primary);">
+          — Pr. Márcio Tavares
+        </div>
       </div>
     </div>
-  </div>
 
     <!-- SEÇÃO: OS TRÊS PILARES -->
     <h2 class="section-title">Nossos Pilares</h2>
@@ -130,158 +133,156 @@
         <h3>SERVIR</h3>
         <p>Colocar nossos dons e talentos à disposição de Deus, da comunidade local e da sociedade.</p>
       </div>
-      
     </div>
 
-   <!-- SEÇÃO LIDERANÇA PASTORAL -->
-<section class="pastoral-section" style="margin-bottom: 3.5rem;">
-  <h2 style="text-align: center; color: var(--color-primary); margin-bottom: 0.5rem; font-size: 1.8rem;">
-    Liderança Pastoral
-  </h2>
-  <p style="text-align: center; color: #6d8193; margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-    Conheça os pastores que conduzem e servem a nossa comunidade com dedicação, ensino da Palavra e cuidado pastoral.
-  </p>
+    <!-- SEÇÃO LIDERANÇA PASTORAL -->
+    <section class="pastoral-section" style="margin-bottom: 3.5rem;">
+      <h2 style="text-align: center; color: var(--color-primary); margin-bottom: 0.5rem; font-size: 1.8rem;">
+        Liderança Pastoral
+      </h2>
+      <p style="text-align: center; color: #6d8193; margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+        Conheça os pastores que conduzem e servem a nossa comunidade com dedicação, ensino da Palavra e cuidado pastoral.
+      </p>
 
-  <!-- GRID COM OS 3 PASTORES -->
-  <div class="pastors-grid">
+      <!-- GRID COM OS PASTORES -->
+      <div class="pastors-grid">
 
-    <!-- PASTOR 1 -->
-    <div class="pastor-card">
-      <div class="pastor-photo-cantainer">
-        <img src="imagem/pr-marcio.webp" alt="pastor Márcio Tavares" class="pastor-photo">
+        <!-- PASTOR 1 -->
+        <div class="pastor-card">
+          <div class="pastor-photo-cantainer">
+            <img src="imagem/pr-marcio.webp" alt="Pastor Márcio Tavares" class="pastor-photo">
+          </div>
+          <div class="pastor-info">
+            <h3>Pr. Márcio Tavares</h3>
+            <span class="pastor-role">Pastor Titular</span>
+            <p>Pr. Márcio Martins Tavares, casado com Nilce, pai de Maurício e Marcelo e avô de Josué e Jônatas, atua ministerialmente na Comunidade Batista Vida Plena - CBVP desde 28 de fevereiro de 2026. É Teólogo formado pelo Seminário Teológico Batista Potiguar - Natal - RN, exercendo o ministério integralmente. Plantou os Pequenos Grupos Multiplicadores - PGM’s, Curso Casais Felizes e a Escola Bíblica Vida Plena. Líder do Conselho Pastoral e o Presidente da igreja. Sua atribuição principal é liderar espiritualmente a nossa Comunidade.</p>
+          </div>
+        </div>
+        
+        <!-- PASTOR 2 -->
+        <div class="pastor-card">
+          <div class="pastor-photo-cantainer">
+            <img src="imagem/pr-silvia.webp" alt="Pastora Silvia R. Sales Marinho" class="pastor-photo">
+          </div>
+          <div class="pastor-info">
+            <h3>Pra. Silvia R. Sales Marinho</h3>
+            <span class="pastor-role">Pastora Auxiliar</span>
+            <p>Pastora Silvia R. Sales Marinho é fundadora da Comunidade Batista Vida Plena e bacharel em Teologia pela Faculdade Batista de Brasília. Exerce o ministério pastoral desde 2005, tendo sido consagrada no Estado do Acre, onde deu início à sua trajetória ministerial.</p>
+            <p>Convertida aos sete anos de idade, possui uma caminhada dedicada ao Reino de Deus e uma vasta experiência prática, tendo atuado em todos os ministérios da igreja local, na formação e capacitação de líderes, no acompanhamento pastoral e no aconselhamento ministerial, sempre com foco no aperfeiçoamento da obra de Cristo.</p>
+            <p>É casada com Teodoro Marinho e mãe de Ana Beatriz e Théo.</p>
+          </div>
+        </div>
+
+        <!-- PASTOR 3 -->
+        <div class="pastor-card">
+          <div class="pastor-photo-cantainer">
+            <img src="imagem/nabor.webp" alt="Pastor Nabor R. Sales" class="pastor-photo">
+          </div>
+          <div class="pastor-info">
+            <h3>Pr. Nabor R. Sales</h3>
+            <span class="pastor-role">Pastor Missionário (Nordeste)</span>
+            <p>Pastor Nabor Rodrigues Sales é graduando em Teologia pela FVC, membro da Comunidade Batista Vida Plena (DF) e missionário da Agência Atos 29 desde dezembro de 2023, atuando no sertão do Seridó (RN).</p>
+            <p>Desde dezembro de 2024 lidera e pastoreia a Comunidade Cristã da Família (CCF) em São Vicente (RN) ao lado de sua esposa, Maria das Graças ("Gracinha Sales"). Tem três filhos (Bruna, Julia e Athos), três netos (Pedro, João e Ana Beatriz) e uma bisneta (Isis Caroline).</p>
+          </div>
+        </div>
+
+        <!-- PASTOR 4 -->
+        <div class="pastor-card">
+          <div class="pastor-photo-cantainer">
+            <img src="imagem/pr-valdeir.webp" alt="Pastor Valdeir Contaifer" class="pastor-photo">
+          </div>
+          <div class="pastor-info">
+            <h3>Pr. Valdeir Contaifer</h3>
+            <span class="pastor-role">Pastor Missionário (Itália)</span>
+            <p>Pastor Valdeir Contaifer, nascido em Brasília-DF, foi professor na FTBB e no Seminário Batista do Sul do Brasil, e missionário pela JMN. Atualmente serve como missionário na Itália.</p>
+            <p>É casado com a psicóloga Morgana Semprini T. Contaifer e pai de Saulo, Silas e Sarah. É doutor em Ministério pela Tyndale University, de Toronto, no Canadá, mestre e bacharel em Teologia pelo Seminário Teológico Betel, do Rio de Janeiro, e especialista em Psicopedagogia pela UniBF, de Paraíso do Norte.</p>
+          </div>
+        </div>
       </div>
-      <div class="pastor-info">
-        <h3>Pr. Márcio Tavares</h3>
-        <span class="pastor-role">Pastor Titular</span>
-        <p>Pr. Márcio Martins Tavares, casado com Nilce, pai de Maurício e Marcelo e avô de Josué e Jônatas, atua ministerialmente na Comunidade Batista Vida Plena - CBVP desde 28 de fevereiro de 2026. É Teólogo formado pelo Seminário Teológico Batista Potiguar - Natal - RN, exercendo o ministério integralmente. Plantou os Pequenos Grupos Multiplicadores - PGM’s, Curso Casais Felizes e a Escola Bíblica Vida Plena. Líder do Conselho Pastoral e o Presidente da igreja. Sua atribuição principal é liderar espiritualmente a nossa Comunidade.</p>
+    </section>
+
+    <!-- SEÇÃO NOSSA HISTÓRIA -->
+    <h2 class="section-title">Nossa História</h2>
+
+    <div class="history-card">
+      <div style="border-left: 3px solid #32bcad; padding-left: 1.2rem; margin-bottom: 1.8rem;">
+        <h3 style="color: #32bcad; font-weight: 700; font-size: 0.9rem;">MAIO DE 2014</h3>
+        <h4 style="color: var(--color-primary); font-size: 1.1rem; margin: 0.2rem 0;">O Início na Casa Pastoral</h4>
+        <p style="margin-bottom: 0;">A história da Comunidade Batista Vida Plena começou de forma simples e acolhedora, na casa do Pr. Luiz Zaire e de Sara. Os domingos eram marcados por encontros de comunhão, adoração e ensino da Palavra, enquanto a sala de TV transformou-se no primeiro espaço Kids.</p>
+      </div>
+
+      <div style="border-left: 3px solid var(--color-primary); padding-left: 1.2rem; margin-bottom: 1.8rem;">
+        <h3 style="color: var(--color-primary); font-weight: 700; font-size: 0.9rem;">19 DE MARÇO DE 2017</h3>
+        <h4 style="color: var(--color-primary); font-size: 1.1rem; margin: 0.2rem 0;">Organização Oficial da Igreja</h4>
+        <p style="margin-bottom: 0;">A CBVP foi oficialmente organizada como igreja, consolidando um trabalho construído com oração, serviço e amor ao Reino de Deus junto aos membros fundadores.</p>
+      </div>
+
+      <div style="border-left: 3px solid #32bcad; padding-left: 1.2rem; margin-bottom: 1.8rem;">
+        <h3 style="color: #32bcad; font-weight: 700; font-size: 0.9rem;">OUTUBRO DE 2019</h3>
+        <h4 style="color: var(--color-primary); font-size: 1.1rem; margin: 0.2rem 0;">Nova Sede no Guará II</h4>
+        <p style="margin-bottom: 0;">Após um período na QI 25, a igreja mudou-se para a QE 32, Conjunto A, onde permanece até hoje servindo às famílias e à comunidade local.</p>
+      </div>
+
+      <div style="border-left: 3px solid var(--color-primary); padding-left: 1.2rem;">
+        <h3 style="color: var(--color-primary); font-weight: 700; font-size: 0.9rem;">FEVEREIRO DE 2026</h3>
+        <h4 style="color: var(--color-primary); font-size: 1.1rem; margin: 0.2rem 0;">Nova Transição Pastoral</h4>
+        <p style="margin-bottom: 0;">O Pr. Márcio Martins Tavares assume a liderança pastoral acompanhado de sua família, conduzindo a igreja no propósito de viver e proclamar o amor de Cristo.</p>
       </div>
     </div>
-    
-    <!-- PASTOR 2 -->
-    <div class="pastor-card">
-      <div class="pastor-photo-cantainer">
-        <img src="imagem/pr-silvia.webp" alt="Pastora Silvia R. Sales Marinho" class="pastor-photo">
-      </div>
-      <div class="pastor-info">
-        <h3>Pra. Silvia R. Sales Marinho</h3>
-        <span class="pastor-role">Pastora Auxiliar</span>
-        <p>Pastora Silvia R. Sales Marinho é fundadora da Comunidade Batista Vida Plena e bacharel em Teologia pela Faculdade Batista de Brasília. Exerce o ministério pastoral desde 2005, tendo sido consagrada no Estado do Acre, onde deu início à sua trajetória ministerial.</p>
-        <p>Convertida aos sete anos de idade, possui uma caminhada dedicada ao Reino de Deus e uma vasta experiência prática, tendo atuado em todos os ministérios da igreja local, na formação e capacitação de líderes, no acompanhamento pastoral e no aconselhamento ministerial, sempre com foco no aperfeiçoamento da obra de Cristo.</p>
-        <p>É casada com Teodoro Marinho e mãe de Ana Beatriz e Théo.</p>
-      </div>
-    </div>
 
-    <!-- PASTOR 3 -->
-    <div class="pastor-card">
-      <div class="pastor-photo-cantainer">
-        <img src="imagem/nabor.webp" alt="Pastor Nabor R. Sales" class="pastor-photo">
-      </div>
-      <div class="pastor-info">
-        <h3>Pr. Nabor R. Sales</h3>
-        <span class="pastor-role">Pastor Missionário (Nordeste)</span>
-        <p>Pastor Nabor Rodrigues Sales é graduando em Teologia pela FVC, membro da Comunidade Batista Vida Plena (DF) e missionário da Agência Atos 29 desde dezembro de 2023, atuando no sertão do Seridó (RN).
-        <p>Desde dezembro de 2024 lidera e pastoreia a Comunidade Cristã da Família (CCF) em São Vicente (RN) ao lado de sua esposa, Maria das Graças ("Gracinha Sales"). Tem três filhos (Bruna, Julia e Athos), três netos (Pedro, João e Ana Beatriz) e uma bisneta (Isis Caroline).</p>
-      </div>
-    </div>
+    <!-- SEÇÃO GALERIA DA LIDERANÇA / FAMÍLIAS PASTORAIS -->
+    <section class="family-section">
+      <div class="container" style="padding: 0;">
+        <h2 class="section-title">Famílias e Liderança</h2>
+        <p class="family-subtitle">Conheça as famílias que servem e caminham juntas na nossa comunidade.</p>
 
-    <!-- PASTOR 4 -->
-    <div class="pastor-card">
-      <div class="pastor-photo-cantainer">
-        <img src="imagem/pr-valdeir.webp" alt="Pastor Nabor R. Sales" class="pastor-photo">
-      </div>
-      <div class="pastor-info">
-        <h3>Pr. Valdeir Contaifer</h3>
-        <span class="pastor-role">Pastor Missionário (Itália)</span>
-        <p>Pastor Valdeir Contaifer, nascido em Brasília-DF, foi professor na FTBB e no Seminário Batista do Sul do Brasil, e missionário pela JMN. Atualmente serve como missionário na Itália.</p>
-        <p>É casado com a psicóloga Morgana Semprini T. Contaifer e pai de Saulo, Silas e Sarah. É doutor em Ministério pela Tyndale University, de Toronto, no Canadá, mestre e bacharel em Teologia pelo Seminário Teológico Betel, do Rio de Janeiro, e especialista em Psicopedagogia pela UniBF, de Paraíso do Norte.</p>
-      </div>
-    </div>
-  </div>
-</section>
+        <div class="family-grid">
+          <!-- CARD FAMÍLIA 1 -->
+          <div class="family-card">
+            <div class="family-photo-container">
+              <img src="imagem/familia-tavares.webp" alt="Família Tavares" class="family-photo">
+            </div>
+            <div class="family-info">
+              <h3>Família Tavares</h3>
+              <p>Pr. Márcio, sua esposa Nilce e filhos</p>
+            </div>
+          </div>
 
-    <!-- SEÇÃO NOSSA HISTÓRIA RESTRUTURADA -->
-<h2 class="section-title">Nossa História</h2>
+          <!-- CARD FAMÍLIA 2 -->
+          <div class="family-card">
+            <div class="family-photo-container">
+              <img src="imagem/familia-Marinho.webp" alt="Família S. Marinho" class="family-photo">
+            </div>
+            <div class="family-info">
+              <h3>Família S. Marinho</h3>
+              <p>Pra. Silvia, seu esposo Teo e filhos</p>
+            </div>
+          </div>
 
-<div class="history-card">
-  <div style="border-left: 3px solid #32bcad; padding-left: 1.2rem; margin-bottom: 1.8rem;">
-    <h3 style="color: #32bcad; font-weight: 700; font-size: 0.9rem;">MAIO DE 2014</h3>
-    <h4 style="color: var(--color-primary); font-size: 1.1rem; margin: 0.2rem 0;">O Início na Casa Pastoral</h4>
-    <p style="margin-bottom: 0;">A história da Comunidade Batista Vida Plena começou de forma simples e acolhedora, na casa do Pr. Luiz Zaire e de Sara. Os domingos eram marcados por encontros de comunhão, adoração e ensino da Palavra, enquanto a sala de TV transformou-se no primeiro espaço Kids.</p>
-  </div>
+          <!-- CARD FAMÍLIA 3 -->
+          <div class="family-card">
+            <div class="family-photo-container">
+              <img src="imagem/pr-nabor.webp" alt="Família do Pr. Nabor" class="family-photo">
+            </div>
+            <div class="family-info">
+              <h3>Família R. Sales</h3>
+              <p>Pr. Nabor e sua esposa Gracinha</p>
+            </div>
+          </div>
 
-  <div style="border-left: 3px solid var(--color-primary); padding-left: 1.2rem; margin-bottom: 1.8rem;">
-    <h3 style="color: var(--color-primary); font-weight: 700; font-size: 0.9rem;">19 DE MARÇO DE 2017</h3>
-    <h4 style="color: var(--color-primary); font-size: 1.1rem; margin: 0.2rem 0;">Organização Oficial da Igreja</h4>
-    <p style="margin-bottom: 0;">A CBVP foi oficialmente organizada como igreja, consolidando um trabalho construído com oração, serviço e amor ao Reino de Deus junto aos membros fundadores.</p>
-  </div>
-
-  <div style="border-left: 3px solid #32bcad; padding-left: 1.2rem; margin-bottom: 1.8rem;">
-    <h3 style="color: #32bcad; font-weight: 700; font-size: 0.9rem;">OUTUBRO DE 2019</h3>
-    <h4 style="color: var(--color-primary); font-size: 1.1rem; margin: 0.2rem 0;">Nova Sede no Guará II</h4>
-    <p style="margin-bottom: 0;">Após um período na QI 25, a igreja mudou-se para a QE 32, Conjunto A, onde permanece até hoje servindo às famílias e à comunidade local.</p>
-  </div>
-
-  <div style="border-left: 3px solid var(--color-primary); padding-left: 1.2rem;">
-    <h3 style="color: var(--color-primary); font-weight: 700; font-size: 0.9rem;">FEVEREIRO DE 2026</h3>
-    <h4 style="color: var(--color-primary); font-size: 1.1rem; margin: 0.2rem 0;">Nova Transição Pastoral</h4>
-    <p style="margin-bottom: 0;">O Pr. Márcio Martins Tavares assume a liderança pastoral acompanhado de sua família, conduzindo a igreja no propósito de viver e proclamar o amor de Cristo.</p>
-  </div>
-</div>
-
-  <!-- SEÇÃO GALERIA DA LIDERANÇA / FAMÍLIAS PASTORAIS -->
-<section class="family-section">
-  <div class="container">
-    <h2 class="section-title">Famílias e Liderança</h2>
-    <p class="family-subtitle">Conheça as famílias que servem e caminham juntas na nossa comunidade.</p>
-
-    <div class="family-grid">
-      
-      <!-- CARD FAMÍLIA 1 -->
-      <div class="family-card">
-        <div class="family-photo-container">
-          <img src="imagem/familia-tavares.webp" alt="Família Tavares" class="family-photo">
-        </div>
-        <div class="family-info">
-          <h3>Família Tavares</h3>
-          <p>Pr. Márcio, sua esposa Nilce e filhos</p>
+          <!-- CARD FAMÍLIA 4 -->
+          <div class="family-card">
+            <div class="family-photo-container">
+              <img src="imagem/familia-contaifer.webp" alt="Família Contaifer" class="family-photo">
+            </div>
+            <div class="family-info">
+              <h3>Família Contaifer</h3>
+              <p>Pr. Valdeir, sua esposa Morgana e filhos</p>
+            </div>
+          </div>
         </div>
       </div>
-
-      <!-- CARD FAMÍLIA 2 (Exemplo) -->
-      <div class="family-card">
-        <div class="family-photo-container">
-          <img src="imagem/familia-Marinho.webp" alt="Família Pastoral" class="family-photo">
-        </div>
-        <div class="family-info">
-          <h3>Família S. Marinho</h3>
-          <p>Pra. Silvia, seu esposo Teo e filhos</p>
-        </div>
-      </div>
-<!-- CARD FAMÍLIA 3 (Exemplo) -->
-      <div class="family-card">
-        <div class="family-photo-container">
-          <img src="imagem/pr-nabor.webp" alt="Família do Pr. Nabor" class="family-photo">
-        </div>
-        <div class="family-info">
-          <h3>Família R. Sales</h3>
-          <p>Pr. Nabor e sua esposa Gracinha</p>
-        </div>
-      </div>
-
-         <!-- CARD FAMÍLIA 4 (Exemplo) -->
-      <div class="family-card">
-        <div class="family-photo-container">
-          <img src="imagem/familia-contaifer.webp" alt="Família do Pr. Nabor" class="family-photo">
-        </div>
-        <div class="family-info">
-          <h3>Família Contaifer</h3>
-          <p>Pr. Valdeir, sua esposa Morgana e filhos</p>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</section>
+    </section>
 
   </main>
 
