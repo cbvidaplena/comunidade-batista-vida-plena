@@ -1,38 +1,4 @@
 /* ==========================================================================
-   1. REGRA GERAL PARA O CONTAINER DE CONTEÚDO (Telas Grandes / Desktop)
-   ========================================================================== */
-
-/* Limita a largura do conteúdo do site e da navbar */
-.container,
-.navbar {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-.container {
-  padding: 3rem 2rem;
-}
-
-/* Ajuste da Navbar no Desktop */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.8rem 1.5rem;
-}
-
-/* Agrupador dos ícones da direita (Redes Sociais + Modo Escuro) */
-.social-icons,
-.header-actions,
-.nav-right {
-  display: flex;
-  align-items: center;
-  gap: 1rem; /* Espaço confortável entre cada ícone */
-}
-
-/* ==========================================================================
    2. BREAKPOINTS DE TELA (Mobile & Tablet)
    ========================================================================== */
 
