@@ -5,8 +5,8 @@
 /* Limita a largura do conteúdo do site e da navbar */
 .container,
 .navbar {
-  width: 80%;
-  max-width: 80vw;
+  width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
 }
