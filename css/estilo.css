@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6,
 }
 .container {
   width: 90%;
-  max-width: 95%;
+  max-width: 90%;
   margin: 0 auto;
   padding: 3rem 1.5rem;
 }
@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6,
 
 .navbar {
   width: 90%;
-  max-width: 95%;
+  max-width: 90%;
   margin: 0 auto;    /* Centraliza os elementos no meio da barra azul */
   display: flex;
   justify-content: space-between;
@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6,
   display: flex;               /* Força os itens a ficarem LADO A LADO */
   flex-direction: row;         /* Alinhamento na horizontal */
   list-style: none;            /* Remove as bolinhas do <ul> */
-  gap: 1.6rem;                   /* Espaçamento entre as opções */
+  gap: 1.7rem;                   /* Espaçamento entre as opções */
   align-items: center;
   margin: 0;
   padding: 0;
