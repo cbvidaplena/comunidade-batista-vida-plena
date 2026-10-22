@@ -337,6 +337,15 @@ h1, h2, h3, h4, h5, h6,
   transform: translateY(-2px);
 }
 
+.divider {
+  display: inline-block; /* Permite que o span aceite largura e altura */
+  width: 1px;            /* Espessura da barra */
+  height: 20px;          /* Altura da barra */
+  background-color: rgba(255, 255, 255, 0.3); /* Cor branca com transparência suave */
+  margin: 0 0.8rem;      /* Espaçamento nas laterais da barra */
+  align-self: center;    /* Garante o alinhamento vertical no centro */
+}
+
 /* Ajuste Responsivo para Mobile */
 @media (max-width: 768px) {
   .header-social {
