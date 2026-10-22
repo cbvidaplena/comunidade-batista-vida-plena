@@ -11,7 +11,7 @@
   --color-white: #ffffff;
   --color-text-dark: #1f2937;
   --color-accent-blue: #006699;
-
+  --color-hover: #32bcad;
   /* Gradients */
   --gradient-blue: linear-gradient(135deg, #0b1f3a 0%, #004080 100%);
   
@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .logo-img {
-  height: 60px;          /* Altura ideal para dar destaque */
+  height: 80px;          /* Altura ideal para dar destaque */
   width: auto;
   display: block;
   object-fit: contain;
@@ -316,7 +316,7 @@ h1, h2, h3, h4, h5, h6,
 .header-social {
   display: flex;
   align-items: center;
-  gap: 0.8rem;            /* Espaço entre cada ícone */
+  gap: 1.6rem;            /* Espaço entre cada ícone */
   flex-shrink: 0;         /* Impede que o bloco seja espremido */
   margin-left: 0.5rem;
   margin-right: 1.5rem;   /* AFAM : Dá o respiro no canto direito da tela */
