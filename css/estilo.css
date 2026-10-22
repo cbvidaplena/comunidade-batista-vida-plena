@@ -83,7 +83,8 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .logo-img {
-  height: 80px;          /* Altura ideal para dar destaque */
+  height: 80px; 
+  max-height: 90px
   width: auto;
   display: block;
   object-fit: contain;
@@ -296,7 +297,7 @@ h1, h2, h3, h4, h5, h6,
   .hero h1 {
     font-size: 1.8rem;
   }
-}
+
 /* Container do Logo */
 .logo-container {
   display: flex;
@@ -309,14 +310,16 @@ h1, h2, h3, h4, h5, h6,
   height: 45px; /* Ajusta a altura conforme o tamanho ideal */
   width: auto;  /* Mantém a proporção da imagem */
   object-fit: contain;
+ }
 }
+   
 /* ==========================================================================
    ÍCONES DAS REDES SOCIAIS NO CABEÇALHO
    ========================================================================== */
 .header-social {
   display: flex;
   align-items: center;
-  gap: 1.6rem;            /* Espaço entre cada ícone */
+  gap: 1.0rem;            /* Espaço entre cada ícone */
   flex-shrink: 0;         /* Impede que o bloco seja espremido */
   margin-left: 0.5rem;
   margin-right: 1.5rem;   /* AFAM : Dá o respiro no canto direito da tela */
