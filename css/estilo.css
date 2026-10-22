@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5, h6,
   display: flex;               /* Força os itens a ficarem LADO A LADO */
   flex-direction: row;         /* Alinhamento na horizontal */
   list-style: none;            /* Remove as bolinhas do <ul> */
-  gap: 0.8rem;                   /* Espaçamento entre as opções */
+  gap: 1.6rem;                   /* Espaçamento entre as opções */
   align-items: center;
   margin: 0;
   padding: 0.8rem 2rem;
@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6,
 .nav-link {
   color: var(--color-white);   /* Texto branco sobre o fundo azul */
   text-decoration: none;       /* Remove o sublinhado */
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;            /* Deixa a fonte mais nítida/encorpada */
   white-space: nowrap;
   transition: color 0.3s ease;
