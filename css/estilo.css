@@ -342,7 +342,7 @@ h1, h2, h3, h4, h5, h6,
   width: 1px;            /* Espessura da barra */
   height: 20px;          /* Altura da barra */
   background-color: rgba(255, 255, 255, 0.3); /* Cor branca com transparência suave */
-  margin: 0 0.5rem;      /* Espaçamento nas laterais da barra */
+  margin: 0;      /* Espaçamento nas laterais da barra */
   align-self: center;    /* Garante o alinhamento vertical no centro */
 }
 
