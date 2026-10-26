@@ -1542,3 +1542,118 @@ body.dark-mode .menu-toggle i {
 .classe-tag.adultos { color: #003366; }
 .classe-tag.jovens { color: #0d9488; }
 .classe-tag.kids { color: #d97706; }
+
+/* Botão Flutuante no Canto Inferior Direito */
+#btn-conexao-flutuante {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366; /* Verde acolhedor / WhatsApp */
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+  z-index: 9998;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#btn-conexao-flutuante:hover {
+  transform: scale(1.05);
+  background-color: #20ba5a;
+}
+
+/* Modal Overlay (Fundo Falso / Escurecido) */
+.modal-conexao-overlay {
+  display: none; /* Escondido por padrão */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+/* Caixa do Formulário (Modal) */
+.modal-conexao-content {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 420px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+  font-family: inherit;
+}
+
+.modal-conexao-content h3 {
+  margin-top: 0;
+  color: #333333;
+  font-size: 22px;
+}
+
+.modal-conexao-content p {
+  color: #666666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Botão Fechar (X) */
+.fechar-modal {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #888888;
+  cursor: pointer;
+}
+
+/* Campos do Formulário */
+.campo-conexao {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.campo-conexao label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #444444;
+}
+
+.campo-conexao input,
+.campo-conexao textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.btn-enviar-conexao {
+  width: 100%;
+  background-color: #1b4332; /* Cor elegante / tema da igreja */
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-enviar-conexao:hover {
+  background-color: #2d6a4f;
+}
