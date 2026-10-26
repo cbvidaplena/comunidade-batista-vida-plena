@@ -203,3 +203,70 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// 1. Quando a página carrega, verifica se o visitante já preencheu o cartão
+document.addEventListener("DOMContentLoaded", function () {
+  const jaPreencheu = localStorage.getItem("cartaoConexaoPreenchido");
+  if (jaPreencheu === "true") {
+    const btn = document.getElementById("btn-conexao-flutuante");
+    if (btn) {
+      btn.style.display = "none"; // Mantém o botão escondido
+    }
+  }
+});
+
+// Função para abrir a janela do Cartão de Conexão
+function abrirCartaoConexao() {
+  document.getElementById('modal-cartao-conexao').style.display = 'flex';
+}
+
+// Função para fechar a janela
+function fecharCartaoConexao() {
+  document.getElementById('modal-cartao-conexao').style.display = 'none';
+}
+
+// Fechar modal ao clicar fora da caixa branca
+window.onclick = function(event) {
+  const modal = document.getElementById('modal-cartao-conexao');
+  if (event.target === modal) {
+    fecharCartaoConexao();
+  }
+};
+
+// Função para montar, enviar os dados e esconder o botão
+function enviarCartaoConexao(event) {
+  event.preventDefault(); // Impede o recarregamento da página
+
+  // Coloque o número do WhatsApp da igreja com DDD (Ex: 5561999999999)
+  const numeroWhatsappIgreja = "5561984716131";
+
+  const nome = document.getElementById('nome-visitante').value;
+  const telefone = document.getElementById('tel-visitante').value;
+  const oracao = document.getElementById('pedido-oracao').value;
+
+  // Montagem do texto formatado
+  let mensagem = `*Novo Cartão de Conexão - Visitante do Site*%0A%0A`;
+  mensagem += `*Nome:* ${encodeURIComponent(nome)}%0A`;
+  mensagem += `*WhatsApp:* ${encodeURIComponent(telefone)}%0A`;
+
+  if (oracao.trim() !== '') {
+    mensagem += `*Pedido de Oração:* ${encodeURIComponent(oracao)}%0A`;
+  }
+
+  // 2. Guarda na memória do navegador que o visitante já preencheu
+  localStorage.setItem("cartaoConexaoPreenchido", "true");
+
+  // 3. Esconde o botão imediatamente na tela
+  const btn = document.getElementById("btn-conexao-flutuante");
+  if (btn) {
+    btn.style.display = "none";
+  }
+
+  // Abre o WhatsApp com a mensagem
+  const urlWhatsapp = `https://wa.me/${numeroWhatsappIgreja}?text=${mensagem}`;
+  window.open(urlWhatsapp, '_blank');
+
+  // Limpa o formulário e fecha o modal
+  document.getElementById('form-conexao').reset();
+  fecharCartaoConexao();
+}
