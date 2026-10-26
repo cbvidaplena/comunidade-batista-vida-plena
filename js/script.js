@@ -245,7 +245,7 @@ function enviarCartaoConexao(event) {
   const oracao = document.getElementById('pedido-oracao').value;
 
   // Montagem do texto formatado
-  let mensagem = `*Novo Cartão de Conexão - Visitante do Site*%0A%0A`;
+  let mensagem = `*Cartão de Conexão - Visitante do Site*%0A%0A`;
   mensagem += `*Nome:* ${encodeURIComponent(nome)}%0A`;
   mensagem += `*WhatsApp:* ${encodeURIComponent(telefone)}%0A`;
 
