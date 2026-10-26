@@ -211,6 +211,39 @@
     <p>QE 32, Conjunto A, casa 07 - Guará II</p>
     <p>Brasília - DF</p>
   </footer>
+<!-- Botão Flutuante do Cartão de Conexão -->
+<button id="btn-conexao-flutuante" onclick="abrirCartaoConexao()">
+  <span>🙏 Primeira vez aqui?</span>
+</button>
+
+<!-- Modal do Cartão de Conexão -->
+<div id="modal-cartao-conexao" class="modal-conexao-overlay">
+  <div class="modal-conexao-content">
+    <button class="fechar-modal" onclick="fecharCartaoConexao()">&times;</button>
+    
+    <h3>Cartão de Conexão</h3>
+    <p>Que alegria ter você conosco! Deixe seus dados para darmos as boas-vindas.</p>
+    
+    <form id="form-conexao" onsubmit="enviarCartaoConexao(event)">
+      <div class="campo-conexao">
+        <label for="nome-visitante">Seu Nome:</label>
+        <input type="text" id="nome-visitante" placeholder="Digite seu nome completo" required>
+      </div>
+
+      <div class="campo-conexao">
+        <label for="tel-visitante">Seu WhatsApp:</label>
+        <input type="tel" id="tel-visitante" placeholder="(00) 00000-0000" required>
+      </div>
+
+      <div class="campo-conexao">
+        <label for="pedido-oracao">Gostaria de um pedido de oração?</label>
+        <textarea id="pedido-oracao" rows="3" placeholder="Escreva aqui (opcional)"></textarea>
+      </div>
+
+      <button type="submit" class="btn-enviar-conexao">Enviar no WhatsApp</button>
+    </form>
+  </div>
+</div>
 
 <!-- SCRIPT EXTERNO UNIFICADO -->
   <script src="js/theme.js"></script>
