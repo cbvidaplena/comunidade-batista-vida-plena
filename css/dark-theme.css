@@ -24,7 +24,7 @@ body.dark-theme .video-card,
 body.dark-theme .family-card,
 body.dark-theme .card-reflexao,
 body.dark-theme .card-avisos,
-body.dark-theme .item-tema 
+body.dark-theme .item-tema,
 body.dark-theme .modal-conexao-content {
   background-color: #1e293b !important;
   border-color: #334155 !important;
@@ -38,7 +38,7 @@ body.dark-theme h3,
 body.dark-theme h4,
 body.dark-theme .section-title,
 body.dark-theme .contact-title,
-body.dark-theme label 
+body.dark-theme label,
 body.dark-theme .modal-conexao-content h3 {
   color: #f8fafc !important;
 }
