@@ -24,7 +24,8 @@ body.dark-theme .video-card,
 body.dark-theme .family-card,
 body.dark-theme .card-reflexao,
 body.dark-theme .card-avisos,
-body.dark-theme .item-tema {
+body.dark-theme .item-tema 
+body.dark-theme .modal-conexao-content {
   background-color: #1e293b !important;
   border-color: #334155 !important;
   border-top-color: #32bcad !important;
