@@ -7,7 +7,7 @@ window.historicoReflexoes = [
     titulo: " O privilégio de servir",
     audio: "audio/privilegio-de-servir.mp3",
     verso: '“Pois o próprio Filho do Homem não veio para ser servido, mas para servir e dar a sua vida em resgate por muitos"',
-    texto:  `<p style="text-align: right;">Marcos 10. 45</p>
+    texto:  `<p style="text-align: right;">Marcos 10.45</p>
              <p>O título desta reflexão nos conduz a uma das declarações mais profundas de Jesus a respeito do propósito de sua vinda ao mundo. Em Marcos 10. 45, nosso Senhor apresenta o serviço não como um sinal de inferioridade, mas como uma expressão de amor, humildade e entrega. Aquele que é o Senhor de todas as coisas veio ao mundo não para exigir privilégios, mas para servir e entregar a própria vida em favor dos pecadores.</p>
              <p>Em uma sociedade que valoriza posições, reconhecimento e visibilidade, as palavras de Jesus nos convidam a rever nossos conceitos sobre grandeza. Frequentemente, somos tentados a medir a importância de alguém pelo cargo que ocupa, pela influência que exerce ou pelo reconhecimento que recebe. No Reino de Deus, entretanto, a verdadeira grandeza não está em quantas pessoas estão à nossa disposição, mas em quantas estamos dispostos a servir por amor ao Senhor.</p>
 	<p>O apóstolo Paulo, escrevendo aos Filipenses, nos apresenta o exemplo de Cristo, que, mesmo existindo em forma de Deus, assumiu a condição de servo e se humilhou até a morte, e morte de cruz (Filipenses 2. 5-8). Servir, portanto, não é simplesmente realizar tarefas ou ocupar uma função na igreja. É permitir que o caráter de Cristo seja formado em nós, levando-nos a colocar nossos dons, nosso tempo e nossas capacidades à disposição de Deus e das pessoas.</p>
