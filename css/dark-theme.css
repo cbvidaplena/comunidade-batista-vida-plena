@@ -38,7 +38,8 @@ body.dark-theme h3,
 body.dark-theme h4,
 body.dark-theme .section-title,
 body.dark-theme .contact-title,
-body.dark-theme label {
+body.dark-theme label 
+body.dark-theme .modal-conexao-content h3 {
   color: #f8fafc !important;
 }
 
